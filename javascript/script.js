@@ -21,3 +21,4 @@ function validateName() {
 }
 
 contactName.addEventListener("keyup", validateName);
+contactPhone.addEventListener("keyup", validatePhone);
