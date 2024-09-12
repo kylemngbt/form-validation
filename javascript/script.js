@@ -6,3 +6,5 @@ const submitError = document.querySelector("#submit-error");
 const contactName = document.querySelector("#contact-name");
 
 
+
+contactName.addEventListener("onkeyup", validateName);
