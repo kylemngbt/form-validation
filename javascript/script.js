@@ -59,3 +59,4 @@ function validateEmail() {
 contactName.addEventListener("keyup", validateName);
 contactPhone.addEventListener("keyup", validatePhone);
 contactEmail.addEventListener("keyup", validateEmail);
+contactMessage.addEventListener("keyup", validateMessage);
