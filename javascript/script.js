@@ -42,3 +42,4 @@ function validatePhone() {
 
 contactName.addEventListener("keyup", validateName);
 contactPhone.addEventListener("keyup", validatePhone);
+constEmail.addEventListener("keyup", validateEmail);
