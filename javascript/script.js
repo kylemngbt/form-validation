@@ -7,6 +7,7 @@ const contactName = document.querySelector("#contact-name");
 const contactPhone = document.querySelector("#contact-phone");
 const contactEmail = document.querySelector("#contact-email");
 const contactMessage = document.querySelector("#contact-message");
+const submitBtn = document.querySelector("#submit-btn");
 
 function validateName() {
   let name = contactName.value;
