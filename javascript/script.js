@@ -56,6 +56,20 @@ function validateEmail() {
   return true
  }
 
+ function validateMessage() {
+  let message = contactMessage.value;
+  let required = 30;
+  let left = required - message.length;
+
+  if (left > 0) {
+    messageError.textContent = `${left} more characters required.`;
+    return false
+  }
+
+  messageError.innerHTML = '<i class="fas fa-check-circle"></i>';
+  return true
+ }
+
 contactName.addEventListener("keyup", validateName);
 contactPhone.addEventListener("keyup", validatePhone);
 contactEmail.addEventListener("keyup", validateEmail);
