@@ -40,7 +40,20 @@ function validatePhone() {
   return true
 }
 
-
+function validateEmail() {
+  let email = contactEmail.value;
+  
+  if (email.length == 0) {
+   emailError.textContent = "Email is required.";
+   return false
+  }
+  if (!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+   emailError.textContent = "Email invalid.";
+   return false
+  }
+  emailError.innerHTML = '<i class="fas fa-check-circle"></i>';
+  return true
+ }
 
 contactName.addEventListener("keyup", validateName);
 contactPhone.addEventListener("keyup", validatePhone);
