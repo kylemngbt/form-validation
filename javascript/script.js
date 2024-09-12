@@ -71,6 +71,17 @@ function validateEmail() {
   return true
  }
 
+ function validateForm() {
+  if (!validateName() || !validatePhone() || !validateEmail() || !validateMessage()) {
+    submitError.computedStyleMap.display = 'block';
+    submitError.textContent = "Please fix the error/s to submit.";
+    setTimeout(function(){
+      submitError.style.display = 'none';
+    }, 3000);
+    return false
+  }
+ }
+
 contactName.addEventListener("keyup", validateName);
 contactPhone.addEventListener("keyup", validatePhone);
 contactEmail.addEventListener("keyup", validateEmail);
