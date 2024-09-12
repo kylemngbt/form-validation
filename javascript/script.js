@@ -40,6 +40,8 @@ function validatePhone() {
   return true
 }
 
+
+
 contactName.addEventListener("keyup", validateName);
 contactPhone.addEventListener("keyup", validatePhone);
-constEmail.addEventListener("keyup", validateEmail);
+contactEmail.addEventListener("keyup", validateEmail);
