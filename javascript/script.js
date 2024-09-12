@@ -7,4 +7,4 @@ const contactName = document.querySelector("#contact-name");
 
 
 
-contactName.addEventListener("onkeyup", validateName);
+contactName.addEventListener("keyup", validateName);
