@@ -4,6 +4,7 @@ const emailError = document.querySelector("#email-error");
 const messageError = document.querySelector("#message-error");
 const submitError = document.querySelector("#submit-error");
 const contactName = document.querySelector("#contact-name");
+const contactPhone = document.querySelector("#contact-phone");
 
 function validateName() {
   let name = contactName.value;
